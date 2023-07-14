@@ -57,7 +57,7 @@ namespace Cardboard_Report
                 else
                 {
                     FolderBrowserDialog folder = new FolderBrowserDialog();
-                    folder.SelectedPath = @"Y:\Product Development\Style Specifications";
+                    folder.SelectedPath = @"DRIVE LOC:\Product Development\Style Specifications";
                     folder.RootFolder = Environment.SpecialFolder.Desktop;
 
                    if(folder.ShowDialog() == DialogResult.OK)
@@ -70,7 +70,7 @@ namespace Cardboard_Report
                 //choose a filelocation based on first choice
                 string saveLoc = "";
                 if(master == true)
-                { saveLoc = @"Y:\Product Development\Standards\Cardboard List.csv"; }
+                { saveLoc = @"DRIVE LOC:\Product Development\Standards\Cardboard List.csv"; }
                 else
                 { saveLoc = @"C:\temp\drawings\Cardboard list(" + DateTime.Now.ToShortDateString() + ").csv"; }
 
